@@ -1,7 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-
-import 'DrawerScreen.dart';
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,14 +22,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3),
-            ()=>Navigator.pushReplacement(context,
-            MaterialPageRoute(builder:
-                (context) =>
-                Sp()
-            )
-        )
-    );
   }
   @override
   Widget build(BuildContext context) {
